@@ -1,0 +1,6 @@
+# We only want to use LF in all files to be consistent if we e.g. check out the repository on windows (with auto eol
+# conversions) and then proceed to use it in linux via dev container. Otherwise we always get git diffs because of
+# the converted line endings.
+#       [0] https://git-scm.com/docs/gitattributes#_text
+#       [1] https://git-scm.com/docs/gitattributes#_eol
+* text=auto eol=lf
